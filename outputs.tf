@@ -9,3 +9,7 @@ output "service_discovery_id" {
 output "cluster_execution_role_name" {
   value = aws_iam_role.execution.name
 }
+
+output "network_block" {
+  value = var.parent_block
+}

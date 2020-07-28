@@ -32,3 +32,6 @@ Fargate Cluster and Service Discovery are configured
 
 - `service_discovery_id`
   - AWS ID for Service Discovery namespace used for internal DNS service discovery registration 
+
+- `network_block`
+  - Block Name for Parent Network
