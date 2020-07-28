@@ -8,11 +8,6 @@ variable "stack_name" {
 
 variable "block_name" {
   type    = string
-  default = "fargate0"
-}
-
-variable "env" {
-  type = string
 }
 
 variable "backend_conn_str" {
