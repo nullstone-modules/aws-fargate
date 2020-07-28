@@ -7,7 +7,15 @@ variable "stack_name" {
 }
 
 variable "block_name" {
-  type    = string
+  type = string
+}
+
+variable "parent_block" {
+  type = string
+}
+
+variable "env" {
+  type = string
 }
 
 variable "backend_conn_str" {

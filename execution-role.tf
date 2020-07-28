@@ -1,5 +1,5 @@
 resource "aws_iam_role" "execution" {
-  name               = "fargate-execution"
+  name               = "${var.stack_name}-${var.block_name}-${var.env}-execution"
   assume_role_policy = data.aws_iam_policy_document.execution.json
 }
 

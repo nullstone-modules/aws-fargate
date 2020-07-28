@@ -1,7 +1,7 @@
 data "terraform_remote_state" "network" {
   backend = "pg"
 
-  workspace = "${var.stack_name}-${var.block_name}-${var.env}"
+  workspace = "${var.stack_name}-${var.parent_block}-${var.env}"
 
   config = {
     conn_str    = var.backend_conn_str
