@@ -11,5 +11,5 @@ output "cluster_execution_role_name" {
 }
 
 output "network_block" {
-  value = var.parent_block
+  value = var.parent_blocks.network
 }

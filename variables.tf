@@ -10,8 +10,10 @@ variable "block_name" {
   type = string
 }
 
-variable "parent_block" {
-  type = string
+variable "parent_blocks" {
+  type = object({
+    network = string
+  })
 }
 
 variable "env" {
