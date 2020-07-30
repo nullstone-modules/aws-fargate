@@ -1,5 +1,5 @@
 resource "aws_ecs_cluster" "this" {
-  name = "${var.stack_name}-${var.block_name}-${var.env}"
+  name = "${var.stack_name}-${var.env}-${var.block_name}"
 
   tags = {
     Stack       = var.stack_name

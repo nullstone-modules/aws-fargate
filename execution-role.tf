@@ -1,6 +1,12 @@
 resource "aws_iam_role" "execution" {
-  name               = "${var.stack_name}-${var.block_name}-${var.env}-execution"
+  name               = "${var.stack_name}-${var.env}-${var.block_name}-execution"
   assume_role_policy = data.aws_iam_policy_document.execution.json
+
+  tags = {
+    Stack       = var.stack_name
+    Environment = var.env
+    Block       = var.block_name
+  }
 }
 
 data "aws_iam_policy_document" "execution" {
