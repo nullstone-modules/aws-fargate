@@ -1,5 +1,5 @@
 resource "aws_iam_role" "execution" {
-  name               = "${data.ns_workspace.this.hyphenated_name}-execution"
+  name               = "execution-${local.resource_name}"
   assume_role_policy = data.aws_iam_policy_document.execution.json
   tags               = data.ns_workspace.this.tags
 }
@@ -24,7 +24,7 @@ resource "aws_iam_role_policy_attachment" "execution-managed" {
 
 // Create policy to pass the execution role to ECS
 resource "aws_iam_policy" "execution-pass-role" {
-  name_prefix = data.ns_workspace.this.hyphenated_name
+  name_prefix = "execution-${local.resource_name}"
   policy      = data.aws_iam_policy_document.deployer-execution.json
 }
 

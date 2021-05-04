@@ -5,3 +5,7 @@ resource "random_string" "resource_suffix" {
   number  = false
   special = false
 }
+
+locals {
+  resource_name = "${data.ns_workspace.this.block}-${random_string.resource_suffix.result}"
+}
