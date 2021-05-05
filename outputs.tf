@@ -8,11 +8,6 @@ output "cluster_name" {
   description = "string ||| Name of the Fargate cluster."
 }
 
-output "service_discovery_id" {
-  value       = aws_service_discovery_private_dns_namespace.service.id
-  description = "string ||| AWS ID for the Private DNS namespace created for this cluster."
-}
-
 output "cluster_execution_role_name" {
   value       = aws_iam_role.execution.name
   description = "string ||| Name of AWS Role that is usually attached to each service for execution."
