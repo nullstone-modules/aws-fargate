@@ -1,4 +1,4 @@
-# block-aws-fargate
+# aws-fargate
 
 Nullstone Block standing up an AWS Fargate cluster with service discovery and execution role ready for launching container services.
 
