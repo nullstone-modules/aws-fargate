@@ -8,11 +8,6 @@ output "cluster_name" {
   description = "string ||| Name of the Fargate cluster."
 }
 
-output "cluster_execution_role_name" {
-  value       = aws_iam_role.execution.name
-  description = "string ||| Name of AWS Role that is usually attached to each service for execution."
-}
-
 output "deployer" {
   value = {
     name       = aws_iam_user.deployer.name
