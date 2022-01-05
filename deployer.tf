@@ -56,9 +56,3 @@ data "aws_iam_policy_document" "deployer" {
     ]
   }
 }
-
-// Allow deployer user to pass this role to AWS using iam:PassRole
-resource "aws_iam_user_policy_attachment" "deployer-execution" {
-  user       = aws_iam_user.deployer.name
-  policy_arn = aws_iam_policy.execution-pass-role.arn
-}
