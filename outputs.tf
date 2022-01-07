@@ -19,3 +19,8 @@ output "deployer" {
 
   sensitive = true
 }
+
+output "deployers_name" {
+  value       = aws_iam_group.deployers.name
+  description = "string ||| Name of the deployers IAM Group that is allowed to deploy to the Fargate cluster."
+}
