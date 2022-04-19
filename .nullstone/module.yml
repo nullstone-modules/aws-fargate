@@ -1,0 +1,11 @@
+org_name: nullstone
+name: aws-fargate
+friendly_name: Fargate Cluster
+description: Produces a standard, best-practice container cluster running on AWS ECS Fargate
+category: block
+type: cluster/aws-fargate
+appCategories: []
+layer: cluster
+is_public: true
+provider_types:
+    - aws
