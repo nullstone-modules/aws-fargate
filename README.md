@@ -1,6 +1,7 @@
 # aws-fargate
 
-Nullstone Block standing up an AWS Fargate cluster with service discovery and execution role ready for launching container services.
+This is a nullstone module to create an AWS Fargate cluster.
+This module comes with a `deployers` IAM group that has privileges to perform deployments.
 
 ## Security & Compliance
 
@@ -15,16 +16,6 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 [![HIPAA](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate/hipaa)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=nullstone-modules%2Faws-fargate&benchmark=HIPAA)
 
 ## Inputs
-
-- `versioning: bool`
-  - Use the versioning feature of S3 to keep multiple versions of each object stored in your bucket.
-    With versioning you can list, retrieve, and restore multiple versions of your objects.
-  - Default: `true`
-
-- `server_side_encryption: bool`
-  - Encrypts all data at the object level as it is being written to S3, automatically decrypts it as you access it.
-    The way you access objects (presigned URLs, listing objects, and retrieving objects) all works the same way as if they were not encrypted.
-  - Default: `true`
 
 ## Outputs
 
