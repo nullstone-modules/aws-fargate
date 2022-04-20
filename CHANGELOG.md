@@ -1,10 +1,13 @@
-## 0.6.6 (Apr 19, 2022)
+## 0.7.0 (Apr 19, 2022)
 
 * Added automated compliance checks and bridgecrew compliance badges.
+* Enabled container insights on cluster.
+* Removed deprecated `deployer` IAM user.
 
 ## 0.6.5 (Jan 07, 2022)
 
 * Updated `deployers` IAM group to be able to execute commands against the ECS services.
+* Marked `deployer` IAM user for deprecation.
 
 ## 0.6.4 (Jan 07, 2022)
 
