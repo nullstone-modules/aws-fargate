@@ -25,9 +25,5 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 - `cluster_name: string`
   - Name of Fargate cluster
 
-- `deployer: { name: string, access_key: string, secret_key: string }`
-  - Sensitive
-  - An AWS User with explicit privilege to deploy ECS services.
-
 - `deployers_name: string`
   - Name of the deployers IAM Group that is allowed to deploy to the Fargate cluster.
