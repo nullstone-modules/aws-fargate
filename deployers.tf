@@ -23,6 +23,17 @@ data "aws_iam_policy_document" "deployer" {
   }
 
   statement {
+    sid       = "AllowHealthMonitor"
+    effect    = "Allow"
+    resources = ["*"]
+
+    actions = [
+      "elasticloadbalancing:Describe*"
+    ]
+  }
+
+  #bridgecrew:skip=CKV_AWS_111: Skipping "Write IAM policies without constraints". False positive because the actions are constrained by cluster in the "condition"
+  statement {
     sid    = "AllowClusterUpdates"
     effect = "Allow"
 
@@ -40,15 +51,5 @@ data "aws_iam_policy_document" "deployer" {
       variable = "ecs:cluster"
       values   = [aws_ecs_cluster.this.arn]
     }
-  }
-
-  statement {
-    sid       = "AllowHealthMonitor"
-    effect    = "Allow"
-    resources = ["*"]
-
-    actions = [
-      "elasticloadbalancing:Describe*"
-    ]
   }
 }
