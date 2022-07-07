@@ -41,13 +41,14 @@ data "aws_iam_policy_document" "deployer" {
       "ecs:DescribeServices",
       "ecs:UpdateService",
       "ecs:*Tasks",
+      "ecs:RunTask",
       "ecs:ExecuteCommand",
     ]
 
     resources = ["*"]
 
     condition {
-      test     = "StringEquals"
+      test     = "ArnEquals"
       variable = "ecs:cluster"
       values   = [aws_ecs_cluster.this.arn]
     }
