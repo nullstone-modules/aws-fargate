@@ -1,3 +1,22 @@
+## 0.7.8 (Jul 09, 2025)
+* Added `ecs:ListTagsForResource` to deployer policy.
+
+# 0.7.7 (Nov 08, 2023)
+* Added `ecs:DescribeTasks` to deployer policy.
+
+# 0.7.5 (Mar 03, 2023)
+* Added terraform lock file.
+
+# 0.7.3 (Jul 22, 2022)
+* Added fargate capacity provider.
+
+# 0.7.2 (Jul 06, 2022)
+* Fixed deployer permissions to run tasks.
+
+# 0.7.1 (Jun 11, 2022)
+* Updated module contract to cluster block.
+* Upgraded `random_string` deprecation.
+
 ## 0.7.0 (Apr 19, 2022)
 
 * Added automated compliance checks and bridgecrew compliance badges.

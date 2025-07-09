@@ -19,6 +19,7 @@ data "aws_iam_policy_document" "deployer" {
       "ecs:DescribeTaskDefinition",
       "ecs:RegisterTaskDefinition",
       "ecs:DeregisterTaskDefinition",
+      "ecs:ListTagsForResource",
     ]
 
     resources = ["*"]
