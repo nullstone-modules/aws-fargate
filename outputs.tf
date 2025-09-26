@@ -12,3 +12,8 @@ output "deployers_name" {
   value       = aws_iam_group.deployers.name
   description = "string ||| Name of the deployers IAM Group that is allowed to deploy to the Fargate cluster."
 }
+
+output "log_retention_in_days" {
+  value       = var.log_retention_in_days
+  description = "number ||| The retention period for the CloudWatch logs for each Fargate service in this cluster."
+}
