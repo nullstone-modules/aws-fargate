@@ -18,6 +18,11 @@ output "deployers_policy_name" {
   description = "string ||| Name of the deployers IAM Policy that is allowed to deploy to the Fargate cluster."
 }
 
+output "deployers_policy_arn" {
+  value       = aws_iam_policy.deployers.arn
+  description = "string ||| ARN of the deployers IAM Policy that is allowed to deploy to the Fargate cluster."
+}
+
 output "log_retention_in_days" {
   value       = var.log_retention_in_days
   description = "number ||| The retention period for the CloudWatch logs for each Fargate service in this cluster."
