@@ -1,3 +1,6 @@
+# 0.7.13 (Feb 10, 2026)
+* Renamed deployers policy name.
+
 # 0.7.12 (Feb 10, 2026)
 * Added `deployers_policy_arn` to outputs.
 
