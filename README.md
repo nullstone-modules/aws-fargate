@@ -17,7 +17,7 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 
 ## Inputs
 
-- `executions_retention_in_days: number` (default `90`)
+- `executions_retention_in_days: number` (default `30`)
   - Days to keep ECS task state-change events. Sets how far back Nullstone shows task-app execution history.
 
 ## Outputs
