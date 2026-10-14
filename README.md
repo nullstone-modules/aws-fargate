@@ -17,7 +17,13 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 
 ## Inputs
 
+- `executions_retention_in_days: number` (default `30`)
+  - Days to keep ECS task state-change events. Sets how far back Nullstone shows task-app execution history.
+
 ## Outputs
+
+- `executions_log_group_name: string`
+  - CloudWatch log group holding ECS task state-change events for the cluster.
 
 - `cluster_arn: string`
   - AWS ARN of Fargate cluster

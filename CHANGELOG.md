@@ -1,3 +1,13 @@
+# 0.9.0 (Oct 14, 2026)
+* Recorded ECS task state-change events for the cluster in a `<cluster>-executions` CloudWatch log group so Nullstone can show task-app execution history past ECS's one-hour retention.
+* Added `executions_retention_in_days` (default 30) and output `executions_log_group_name`.
+* Granted deployers read access to the executions log group.
+* Upgraded `nullstone-io/ns` provider to `~> 0.13.0`.
+
+# 0.8.0 (Jun 25, 2026)
+* Upgraded `ns` provider to `0.11.1`.
+* Switched to `aws_tags` for proper resource attribution.
+
 # 0.7.13 (Feb 10, 2026)
 * Renamed deployers policy name.
 
